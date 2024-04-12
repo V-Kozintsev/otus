@@ -18,24 +18,27 @@
 }
 @font-face {
   font-family: "Playfair Display SemiBold";
-  src: url(../fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf) format("truetype");
+  src: url(../fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf)
+    format("truetype");
 }
 @font-face {
   font-family: "Playfair Display Regular";
-  src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf) format("truetype");
+  src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf)
+    format("truetype");
 }
 @font-face {
   font-family: "Playfair Display Medium";
-  src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf) format("truetype");
+  src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf)
+    format("truetype");
 }
 @font-face {
   font-family: "Roboto Medium";
   src: url(../fonts/Roboto/Roboto-Medium.ttf) format("truetype");
 }
 @font-face {
-    font-family: "Roboto Regular";
-    src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
-  }
+  font-family: "Roboto Regular";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
 @font-face {
   font-family: "Roboto Bold";
   src: url(../fonts/Roboto/Roboto-Bold.ttf) format("truetype");
@@ -44,7 +47,6 @@
   font-family: "Roboto Black";
   src: url(../fonts/Roboto/Roboto-Black.ttf) format("truetype");
 }
-
 
 /* ПЕРВАЯ СЕКЦИЯ САЙТА */
 
