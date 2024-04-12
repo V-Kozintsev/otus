@@ -114,3 +114,19 @@
 }
 
 /* //////////////////// */
+
+/* ТРЕТЬЯ СЕКЦИЯ САЙТА */
+
+#section-designers {
+  font-family: "Roboto Bold";
+  font-size: 24px;
+}
+.name-designers {
+  font-family: "Roboto Bold";
+  font-size: 16px;
+}
+.origin-skills {
+  font-family: "Roboto Regular";
+}
+
+/* //////////////////// */
