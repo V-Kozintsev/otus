@@ -1,3 +1,51 @@
+/* подключаем шрифты */
+
+@font-face {
+  font-family: "Bitter Bold";
+  src: url(../fonts/Bitter/static/Bitter-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Bitter Regular";
+  src: url(../fonts/Bitter/static/Bitter-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Bitter Light";
+  src: url(../fonts/Bitter/static/Bitter-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Inter Regular";
+  src: url(../fonts/Inter/static/Inter-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display SemiBold";
+  src: url(../fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display Regular";
+  src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display Medium";
+  src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(../fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  }
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto Black";
+  src: url(../fonts/Roboto/Roboto-Black.ttf) format("truetype");
+}
+
+
 /* ПЕРВАЯ СЕКЦИЯ САЙТА */
 
 .site-logo {
@@ -32,4 +80,35 @@
   font-size: 20px;
 }
 
-/* ////////////////////// */
+/* //////////////////// */
+
+/* ВТОРАЯ СЕКЦИЯ САЙТА */
+
+#section-biography {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+.name-artDirector {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 86px;
+}
+.company-management {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+.blockquote-1 {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+}
+
+/* //////////////////// */
