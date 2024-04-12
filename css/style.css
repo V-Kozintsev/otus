@@ -1,0 +1,35 @@
+/* ПЕРВАЯ СЕКЦИЯ САЙТА */
+
+.site-logo {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 86px;
+}
+.links-section {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  list-style-type: none;
+}
+.links-section a {
+  color: black;
+  text-decoration: none;
+}
+.main-heading {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 86px;
+}
+.studio-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* ////////////////////// */
