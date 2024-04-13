@@ -130,3 +130,26 @@
 }
 
 /* //////////////////// */
+
+/* ЧЕТВЕРТАЯ СЕКЦИЯ САЙТА */
+
+.container-links {
+  list-style-type: none;
+  font-family: "Roboto Bold";
+  font-size: 16px;
+}
+.container-links a {
+  color: black;
+  font-family: "Roboto Regular";
+  text-decoration: none;
+}
+#section-testimonials {
+  font-family: "Roboto Bold";
+  font-size: 24px;
+}
+.blockquote-2 {
+  font-family: "Bitter Regular";
+  font-size: 32px;
+}
+
+/* ///////////////////// */
