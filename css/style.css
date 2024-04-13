@@ -131,7 +131,7 @@
 
 /* //////////////////// */
 
-/* ЧЕТВЕРТАЯ СЕКЦИЯ САЙТА */
+/* ЧЕТВЁРТАЯ СЕКЦИЯ САЙТА */
 
 .container-links {
   list-style-type: none;
@@ -153,3 +153,22 @@
 }
 
 /* ///////////////////// */
+
+/* ПЯТАЯ СЕКЦИЯ САЙТА */
+
+#section-strong-points {
+  font-family: "Roboto Bold";
+  font-size: 24px;
+}
+.bold-text {
+  font-family: "Playfair Display Medium";
+  font-size: 86px;
+  line-height: 86px;
+}
+.creative-area {
+  font-family: "Bitter Regular";
+  font-size: 34px;
+  list-style-type: none;
+}
+
+/* ////////////////// */
