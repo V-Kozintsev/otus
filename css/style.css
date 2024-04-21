@@ -68,6 +68,9 @@
   color: black;
   text-decoration: none;
 }
+a {
+  color: red !important;
+}
 .main-heading {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
