@@ -118,11 +118,11 @@
 
 /* ТРЕТЬЯ СЕКЦИЯ САЙТА */
 
-#section-designers {
+#designers-heading {
   font-family: "Roboto Bold";
   font-size: 24px;
 }
-.name-designers {
+.designer-info {
   font-family: "Roboto Bold";
   font-size: 16px;
 }
