@@ -134,19 +134,19 @@
 
 /* ЧЕТВЁРТАЯ СЕКЦИЯ САЙТА */
 
-.container-links {
+.recommendations-links-container {
   list-style-type: none;
   font-family: "Roboto Bold";
   font-size: 16px;
 }
-.container-links a {
-  color: black;
+.recommendations-links-container a {
+  color: black !important; /* применил на всякий случай */
   font-family: "Roboto Regular";
   text-decoration: none;
 }
-#section-testimonials {
+#testimonials-heading {
   font-family: "Roboto Bold";
-  font-size: 24px;
+  font-size: 24px !important;
 }
 .blockquote-2 {
   font-family: "Bitter Regular";
