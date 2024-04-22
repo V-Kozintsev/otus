@@ -57,28 +57,26 @@
   font-style: normal;
   font-size: 86px;
 }
-.links-section {
+.menu-links {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 24px;
   list-style-type: none;
 }
-.links-section a {
+.menu-link {
   color: black;
   text-decoration: none;
 }
-a {
-  color: red !important;
-}
-.main-heading {
+
+.section-heading {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 86px;
 }
-.studio-description {
+.studio-tagline {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -89,26 +87,26 @@ a {
 
 /* ВТОРАЯ СЕКЦИЯ САЙТА */
 
-#section-biography {
+#bio-heading {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
 }
-.name-artDirector {
+.art-director-name {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 86px;
 }
-.company-management {
+.art-director-info {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
 }
-.blockquote-1 {
+.art-director-quote {
   font-family: "Bitter", serif;
   font-optical-sizing: auto;
   font-weight: 400;
