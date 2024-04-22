@@ -166,7 +166,7 @@
   font-size: 86px;
   line-height: 86px;
 }
-.creative-area {
+.strong-points-list {
   font-family: "Bitter Regular";
   font-size: 34px;
   list-style-type: none;
@@ -176,11 +176,11 @@
 
 /* ПОДВАЛ */
 
-footer {
+.site-footer {
   background-color: black;
 }
 
-.block-web-phone a {
+.contact-info-block a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -190,7 +190,7 @@ footer {
   text-decoration: none;
   line-height: 26px;
 }
-.Heading-product {
+.product-heading {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -201,7 +201,7 @@ footer {
   font-family: "Roboto Black";
   font-size: 24px;
 }
-.copyright {
+.copyright-text {
   font-family: "Roboto Regular";
   color: white;
 }
