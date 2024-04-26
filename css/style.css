@@ -47,15 +47,31 @@
   font-family: "Roboto Black";
   src: url(../fonts/Roboto/Roboto-Black.ttf) format("truetype");
 }
+/* ВЕСЬ САЙТ */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* /////////////////// */
 
 /* ПЕРВАЯ СЕКЦИЯ САЙТА */
 
+.main-navigation {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 .site-logo {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-size: 86px;
+  margin-left: 23px;
 }
 .menu-links {
   font-family: "Roboto", sans-serif;
@@ -63,24 +79,54 @@
   font-style: normal;
   font-size: 24px;
   list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.menu-links li {
+  margin-right: 55px;
+}
+.menu-links li:last-child {
+  margin-right: 23px;
 }
 .menu-link {
   color: black;
   text-decoration: none;
 }
-
+.main-section {
+  height: 630px;
+  position: relative;
+}
+.background-container {
+  background-image: url(..//img/inside-weather-Uxqlfigh6oE-unsplash\ 1.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+.center-rectangle {
+  position: absolute;
+  background-color: white;
+  width: 690px;
+  height: 57.1%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .section-heading {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 86px;
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 14px;
 }
 .studio-tagline {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
+  text-align: center;
 }
 
 /* //////////////////// */
