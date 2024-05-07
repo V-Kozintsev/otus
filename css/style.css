@@ -48,6 +48,9 @@
   src: url(../fonts/Roboto/Roboto-Black.ttf) format("truetype");
 }
 /* ВЕСЬ САЙТ */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0px;
@@ -132,25 +135,52 @@
 /* //////////////////// */
 
 /* ВТОРАЯ СЕКЦИЯ САЙТА */
+.art-director-section {
+  height: 1141px;
+  display: flex;
+  padding: 151px 143px;
+}
+#bio-heading img {
+  max-width: 571px;
+  height: 840px;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper-imgdir {
+  margin-right: 28px;
+}
 
-#bio-heading {
+.textbiography {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-right: 77px;
 }
+
 .art-director-name {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 86px;
+  margin-bottom: 36px;
 }
 .art-director-info {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
+  margin-bottom: 36px;
+}
+.stripe {
+  display: block;
+  background-color: black;
+  width: 20px;
+  height: 6px;
+  margin-bottom: 18px;
 }
 .art-director-quote {
   font-family: "Bitter", serif;
