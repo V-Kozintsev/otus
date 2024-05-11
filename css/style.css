@@ -136,9 +136,11 @@ html {
 
 /* ВТОРАЯ СЕКЦИЯ САЙТА */
 .art-director-section {
+  max-width: 1440px;
   height: 1141px;
   display: flex;
   padding: 151px 143px;
+  margin: 0 auto;
 }
 #bio-heading img {
   max-width: 571px;
