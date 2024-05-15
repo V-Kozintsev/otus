@@ -234,25 +234,53 @@ html {
 
 /* ЧЕТВЁРТАЯ СЕКЦИЯ САЙТА */
 
+.testimonials-section {
+  max-width: 1440px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  height: 760px;
+  grid-gap: 20px;
+  margin-top: 150px;
+  margin: 0 auto;
+}
+
 .recommendations-links-container {
   list-style-type: none;
   font-family: "Roboto Bold";
   font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
+.recommendation-link {
+  margin-top: 30px;
+  grid-row: -1;
+}
+
 .recommendations-links-container a {
   color: black !important; /* применил на всякий случай */
   font-family: "Roboto Regular";
   text-decoration: none;
 }
+.recommendations-links-container {
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
 #testimonials-heading {
   font-family: "Roboto Bold";
   font-size: 24px !important;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: end;
 }
 .blockquote-2 {
   font-family: "Bitter Regular";
   font-size: 32px;
 }
-
+.aside-section№4 {
+  margin-left: 91px;
+}
 /* ///////////////////// */
 
 /* ПЯТАЯ СЕКЦИЯ САЙТА */
