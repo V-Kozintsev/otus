@@ -236,12 +236,13 @@ html {
 
 .testimonials-section {
   max-width: 1440px;
-  width: 100%;
+  width: 80%;
   display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-columns: auto auto 28px 1fr;
   height: 760px;
   grid-gap: 20px;
   margin-top: 150px !important;
+
   margin: 0 auto;
 }
 
@@ -273,6 +274,7 @@ html {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   text-align: end;
+  /* max-width: 28px; */
 }
 .blockquote-2 {
   font-family: "Bitter Regular";
@@ -282,7 +284,18 @@ html {
   text-align: center;
 }
 .aside-section№4 {
-  /* margin-left: 91px; */
+  margin-left: 206px;
+}
+.img_testimonials {
+  width: 100%;
+  height: 100%;
+  max-width: 451px;
+  object-fit: cover;
+}
+.img_testimonials1 {
+  width: 100%;
+  max-width: 221px;
+  /* object-fit: cover; */
 }
 /* ///////////////////// */
 
