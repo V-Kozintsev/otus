@@ -385,9 +385,22 @@ html {
     gap: 60px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 992px) {
+}
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .menu-links {
     flex-direction: column;
     gap: 5px;
+  }
+  .art-director-section {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    height: 50%;
+  }
+  .textbiography {
+    /* padding: 0; */
+
+    writing-mode: inherit;
+    transform: rotate(0deg);
   }
 }
