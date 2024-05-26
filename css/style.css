@@ -64,9 +64,12 @@ html {
 
 .main-navigation {
   max-width: 1440px;
+  width: 98%;
+  height: 135px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .site-logo {
   font-family: "Playfair Display", serif;
@@ -74,7 +77,6 @@ html {
   font-weight: 600;
   font-style: normal;
   font-size: 86px;
-  margin-left: 23px;
 }
 .menu-links {
   font-family: "Roboto", sans-serif;
@@ -83,36 +85,34 @@ html {
   font-size: 24px;
   list-style-type: none;
   display: flex;
-  align-items: center;
 }
 .menu-links li {
   margin-right: 55px;
-}
-.menu-links li:last-child {
-  margin-right: 23px;
 }
 .menu-link {
   color: black;
   text-decoration: none;
 }
 .main-section {
-  height: 630px;
+  min-height: 630px;
   position: relative;
-}
-.background-container {
   background-image: url(..//img/inside-weather-Uxqlfigh6oE-unsplash\ 1.jpg);
-  height: 100%;
+  background-position: left;
+  background-size: cover;
   width: 100%;
-  background-size: 100% 100%;
 }
 .center-rectangle {
   position: absolute;
   background-color: white;
-  width: 690px;
+  width: 44%;
   height: 57.1%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .section-heading {
   font-family: "Playfair Display", serif;
@@ -120,16 +120,12 @@ html {
   font-weight: 500;
   font-style: normal;
   font-size: 86px;
-  text-align: center;
-  margin-top: 110px;
-  margin-bottom: 14px;
 }
 .studio-tagline {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
-  text-align: center;
 }
 
 /* //////////////////// */
@@ -199,7 +195,6 @@ html {
 .designers-section {
   margin: 0 auto;
   max-width: 1440px;
-  /* border: 1px solid red; */
   padding: 0 20px;
 }
 
@@ -274,7 +269,6 @@ html {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   text-align: end;
-  /* max-width: 28px; */
 }
 .blockquote-2 {
   font-family: "Bitter Regular";
@@ -295,7 +289,6 @@ html {
 .img_testimonials1 {
   width: 100%;
   max-width: 221px;
-  /* object-fit: cover; */
 }
 /* ///////////////////// */
 
@@ -303,6 +296,7 @@ html {
 
 .strong-points-section {
   margin: 150px 0;
+  padding-left: 20px;
 }
 .container_strong-points {
   display: -webkit-box;
@@ -310,7 +304,6 @@ html {
   display: flex;
   gap: 20px;
   width: 100%;
-  margin-left: 20px;
   overflow: auto;
   margin-top: 30px;
 }
@@ -374,3 +367,27 @@ html {
 }
 
 /* ////////////////// */
+
+/* Адаптив для планшетов */
+
+@media screen and (max-width: 1199px) {
+  .section-heading {
+    font-size: 6vw;
+  }
+  .menu-links {
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+  .menu-links li {
+    margin-right: 20px;
+  }
+  .main-navigation {
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .menu-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
