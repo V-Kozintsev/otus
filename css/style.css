@@ -387,14 +387,19 @@ html {
 /* Адаптив для планшетов */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-
   /* Вторая секция */
 
   .menu-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 5px;
   }
   .art-director-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     height: 50%;
     text-align: center;
@@ -407,7 +412,11 @@ html {
     max-height: 50vh;
   }
   .textbiography {
+    -webkit-writing-mode: inherit;
+    -ms-writing-mode: inherit;
     writing-mode: inherit;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   .art-director-section {
@@ -417,6 +426,6 @@ html {
   .stripe {
     margin: 20px auto;
   }
-  
+
   /* ////////////////// */
 }
