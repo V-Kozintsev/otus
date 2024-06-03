@@ -50,82 +50,123 @@
 /* ВЕСЬ САЙТ */
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* /////////////////// */
+a {
+  text-decoration: none;
+}
+.box-header {
+  height: 74.5rem;
+  background: url(..//img/header-img.jpg) left top/cover no-repeat;
+}
 
-/* ПЕРВАЯ СЕКЦИЯ САЙТА */
+.box-header__container {
+  height: 13.5rem;
+  background-color: white;
+}
 
-.main-navigation {
-  max-width: 1440px;
-  width: 98%;
-  height: 135px;
-  margin: 0 auto;
+.box-header__center-rectangle {
+  max-width: 69rem;
+  height: 36rem;
+  background-color: white;
+  margin: 13.6rem auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
-.site-logo {
+
+.box-header__section-heading {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 8.6rem;
+}
+
+.box-header__studio-tagline {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.box-header__navigation {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 98%;
+}
+
+.box-header__menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.4rem;
+  list-style-type: none;
+}
+
+.box-header__site-logo {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 86px;
+  font-size: 8.6rem;
 }
-.menu-links {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 24px;
-  list-style-type: none;
-  display: flex;
+
+.box-header__menu-links li {
+  margin-right: 5.5rem;
 }
-.menu-links li {
-  margin-right: 55px;
+
+.box-header__menu-links li:last-child {
+  margin-right: 0rem;
 }
+
 .menu-link {
   color: black;
-  text-decoration: none;
 }
-.main-section {
-  min-height: 630px;
-  position: relative;
-  background-image: url(..//img/inside-weather-Uxqlfigh6oE-unsplash\ 1.jpg);
-  background-position: left;
-  background-size: cover;
-  width: 100%;
-}
-.center-rectangle {
-  position: absolute;
-  background-color: white;
-  width: 44%;
-  height: 57.1%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.section-heading {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 86px;
-}
-.studio-tagline {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 20px;
+
+.menu-link:hover {
+  text-decoration: underline;
 }
 
 /* //////////////////// */
@@ -368,19 +409,20 @@ html {
 
 /* ////////////////// */
 
-@media screen and (max-width: 1199px) {
-  .section-heading {
-    font-size: 6vw;
-  }
-  .menu-links {
+@media screen and (max-width: 968px) {
+  .box-header__menu-links {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    gap: 2rem;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: end;
   }
-  .menu-links li {
-    margin-right: 20px;
+  .box-header__menu-links li {
+    margin-right: 0rem;
   }
-  .main-navigation {
-    gap: 60px;
+  .box-header__site-logo {
+    margin-right: 15rem;
   }
 }
 
@@ -388,44 +430,77 @@ html {
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   /* Вторая секция */
-
-  .menu-links {
+  .box-header__center-rectangle {
+    max-width: 47%;
+    background-color: white;
+  }
+  .box-header__menu-links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.5rem;
+    font-size: 2.2rem;
   }
-  .art-director-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-    height: 50%;
-    text-align: center;
+  .box-header__section-heading {
+    line-height: 1.1;
+    font-size: 7rem;
+    margin-bottom: 1rem;
   }
-  .textbiography,
-  .wrapper-imgdir {
-    margin-right: 0;
+  .box-header__studio-tagline {
+    font-size: 1.8rem;
   }
-  .wrapper-imgdir img {
-    max-height: 50vh;
-  }
-  .textbiography {
-    -webkit-writing-mode: inherit;
-    -ms-writing-mode: inherit;
-    writing-mode: inherit;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  .art-director-section {
-    gap: 30px;
-    padding: 30px;
-  }
-  .stripe {
-    margin: 20px auto;
-  }
+}
 
-  /* ////////////////// */
+.art-director-section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  height: 50%;
+  text-align: center;
+}
+.textbiography,
+.wrapper-imgdir {
+  margin-right: 0;
+}
+.wrapper-imgdir img {
+  max-height: 50vh;
+}
+.textbiography {
+  -webkit-writing-mode: inherit;
+  -ms-writing-mode: inherit;
+  writing-mode: inherit;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.art-director-section {
+  gap: 30px;
+  padding: 30px;
+}
+.stripe {
+  margin: 20px auto;
+}
+
+/* ////////////////// */
+
+@media screen and (max-width: 575px) {
+  .box-header__container {
+    display: none;
+  }
+  .box-header {
+    background: url(..//img/mobile-img.png) center/cover;
+  }
+  .box-header__center-rectangle {
+    margin: 0 auto;
+  }
+  .box-header__section-heading {
+    line-height: 1.1;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+  }
+  .box-header__studio-tagline {
+    font-size: 1.8rem;
+  }
 }
