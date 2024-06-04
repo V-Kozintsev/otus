@@ -58,6 +58,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -170,7 +171,7 @@ a {
 /* ////////////////////// 2 */
 
 .box-art-director {
-  max-height: 114rem;
+  max-height: 124rem;
 }
 .box-art-director__container {
   max-width: 144rem;
@@ -240,85 +241,6 @@ a {
   font-weight: 400;
   font-style: normal;
   font-size: 26px;
-}
-
-@media screen and (max-width: 968px) {
-  .box-header__menu-links {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 2rem;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end;
-  }
-  .box-header__menu-links li {
-    margin-right: 0rem;
-  }
-  .box-header__site-logo {
-    margin-right: 15rem;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  .box-header__center-rectangle {
-    max-width: 47%;
-    background-color: white;
-  }
-  .box-header__menu-links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 2.2rem;
-  }
-  .box-header__section-heading {
-    line-height: 1.1;
-    font-size: 7rem;
-    margin-bottom: 1rem;
-  }
-  .box-header__studio-tagline {
-    font-size: 1.8rem;
-  }
-
-  /*  2 секция */
-
-  .box-art-director__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-    padding: 3rem 0px;
-    gap: 4rem;
-  }
-  .box-art-director {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-    height: 50%;
-    text-align: center;
-  }
-  .box-art-director__textbiography,
-  .box-art-director__wrapper-imgdir {
-    margin-right: 0;
-  }
-  .box-art-director__wrapper-imgdir img {
-    max-height: 50vh;
-    margin-right: 0px;
-  }
-
-  .box-art-director__textbiography {
-    -webkit-writing-mode: inherit;
-    -ms-writing-mode: inherit;
-    writing-mode: inherit;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  .stripe {
-    margin: 20px auto;
-  }
 }
 
 /* //////////////////// */
