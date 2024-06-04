@@ -167,6 +167,81 @@ a {
   text-decoration: underline;
 }
 
+/* ////////////////////// 2 */
+
+.box-art-director {
+  max-height: 114rem;
+}
+.box-art-director__container {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 151px 143px;
+}
+
+.box-art-director-info__oppen,
+.art-director-name-hidden,
+.hidden {
+  display: none;
+}
+
+.box-art-director__wrapper-imgdir img {
+  max-width: 571px;
+  height: 840px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 28px;
+}
+
+.box-art-director__textbiography {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-right: 77px;
+}
+
+.box-art-director__art-director-name {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 86px;
+  margin-bottom: 36px;
+}
+
+.box-art-director__art-director-info {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 36px;
+}
+
+.stripe {
+  display: block;
+  background-color: black;
+  width: 20px;
+  height: 6px;
+  margin-bottom: 18px;
+}
+.box-art-director__art-director-quote {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+}
+
 @media screen and (max-width: 968px) {
   .box-header__menu-links {
     -ms-flex-wrap: wrap;
@@ -204,6 +279,46 @@ a {
   .box-header__studio-tagline {
     font-size: 1.8rem;
   }
+
+  /*  2 секция */
+
+  .box-art-director__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    padding: 3rem 0px;
+    gap: 4rem;
+  }
+  .box-art-director {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    height: 50%;
+    text-align: center;
+  }
+  .box-art-director__textbiography,
+  .box-art-director__wrapper-imgdir {
+    margin-right: 0;
+  }
+  .box-art-director__wrapper-imgdir img {
+    max-height: 50vh;
+    margin-right: 0px;
+  }
+
+  .box-art-director__textbiography {
+    -webkit-writing-mode: inherit;
+    -ms-writing-mode: inherit;
+    writing-mode: inherit;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  .stripe {
+    margin: 20px auto;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -223,5 +338,72 @@ a {
   }
   .box-header__studio-tagline {
     font-size: 1.8rem;
+  }
+
+  /* 2 секция */
+  .box-art-director__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    padding: 8rem 0px;
+  }
+
+  .box-art-director__wrapper-imgdir img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-right: 0px;
+  }
+  .box-art-director__hidden-info,
+  .box-art-director-info__hidden,
+  .art-director-name-oppen,
+  .box-art-director__textbiography-hidden,
+  .indent {
+    display: none;
+  }
+
+  .art-director-name-hidden {
+    font-size: 6.4rem;
+    margin-bottom: 3.5rem;
+  }
+  .indent {
+    margin-bottom: 4.1rem;
+  }
+  .art-director-name-hidden,
+  .box-art-director-info__oppen,
+  .box-art-director__textbiography-oppen,
+  .hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0px;
+  }
+  .hidden,
+  .box-art-director-info__oppen {
+    padding: 0 1.6rem;
+  }
+  .box-art-director-info__oppen ul {
+    list-style-type: none;
+  }
+  .box-art-director__textbiography-oppen {
+    -webkit-writing-mode: inherit;
+    -ms-writing-mode: inherit;
+    writing-mode: inherit;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  .stripe_hidden {
+    display: none;
+  }
+  .box-art-director-info__oppen {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 5.7rem;
+  }
+  .box-art-director__items {
+    font-weight: 500;
   }
 }

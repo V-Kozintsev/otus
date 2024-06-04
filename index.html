@@ -61,34 +61,76 @@
       </section>
     </header>
 
-    <section class="art-director-section">
+    <section class="box-art-director">
       <!-- Секция описания арт директора -->
-      <div class="wrapper-imgdir">
-        <img src="img/pictureartdirector.jpg" alt="Picture of Art Director" />
-      </div>
-      <!-- изображение арт директор -->
-      <div>
-        <h2 class="textbiography">Biography</h2>
-      </div>
-      <!-- Заголовок биографии -->
-      <article id="bio-heading" class="content-ardirector">
-        <!-- Основная информация об арт директоре -->
-        <h3 class="art-director-name">Katya<br />Mills</h3>
-        <!-- Имя арт директора -->
-        <p class="art-director-info">
-          <strong
-            >Art Director <br />Scenography / Styling / Creative Photography /
-            Design</strong
+      <div class="box-art-director__container">
+        <picture class="box-art-director__wrapper-imgdir">
+          <source
+            srcset="img/pictureartdirector-mobile.jpg"
+            media="(max-width: 575px)"
+          />
+          <img src="img/pictureartdirector.jpg" alt="Picture of Art Director" />
+        </picture>
+
+        <!-- изображение арт директор -->
+        <div>
+          <h2
+            class="box-art-director__textbiography box-art-director__textbiography-hidden"
           >
-        </p>
-        <span class="stripe"></span>
-        <!-- Описание направлений деятельности директора -->
-        <blockquote class="art-director-quote">
-          “The more I deal with the work<br />as something that is my own,<br />as
-          something that is personal,<br />the more successful it is.”
-        </blockquote>
-        <!-- Мотивационное сообщение арт директора.Мотивация! -->
-      </article>
+            Biography
+          </h2>
+        </div>
+        <!-- Заголовок биографии -->
+        <article id="bio-heading" class="box-art-director__content-ardirector">
+          <!-- Основная информация об арт директоре -->
+          <h3
+            class="box-art-director__art-director-name art-director-name-oppen"
+          >
+            Katya<br />Mills
+          </h3>
+          <!-- Имя арт директора -->
+          <p
+            class="box-art-director__art-director-info box-art-director-info__hidden"
+          >
+            <strong
+              >Art Director <br />Scenography / Styling / Creative Photography /
+              Design</strong
+            >
+          </p>
+          <div
+            class="box-art-director__art-director-info box-art-director-info__oppen"
+          >
+            <ul class="box-art-director__items">
+              <li>Art Director</li>
+              <li>- Scenography</li>
+              <li>- Styling</li>
+              <li>- Creative Photography</li>
+              <li>- Design</li>
+            </ul>
+            <h2
+              class="box-art-director__textbiography box-art-director__textbiography-oppen"
+            >
+              Biography
+            </h2>
+          </div>
+          <span class="stripe stripe_hidden"></span>
+          <!-- Описание направлений деятельности директора -->
+          <blockquote class="box-art-director__art-director-quote indent">
+            “The more I deal with the work<br />as something that is my own,<br />as
+            something that is personal,<br />the more successful it is.”
+          </blockquote>
+          <blockquote class="box-art-director__art-director-quote hidden">
+            “The more I deal with the work as something that is my own, as
+            something that is personal, the more successful it is.”
+          </blockquote>
+          <h3
+            class="box-art-director__art-director-name art-director-name-hidden"
+          >
+            -Katya Mills
+          </h3>
+          <!-- Мотивационное сообщение арт директора.Мотивация! -->
+        </article>
+      </div>
     </section>
 
     <section class="designers-section">
