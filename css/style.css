@@ -383,6 +383,9 @@ a {
 /* ////////////////// */
 
 /* ПОДВАЛ */
+.mobile-navigation-hidden {
+  display: none;
+}
 
 .site-footer {
   background-color: black;
@@ -392,17 +395,17 @@ a {
   padding: 70px 20px;
 }
 
-.contact-info-block a {
+.site-footer__contact-info-block a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: white;
   text-transform: uppercase;
   font-size: 16px;
-  text-decoration: none;
+  text-decoration: underline;
   line-height: 26px;
 }
-.product-heading {
+.site-footer__product-heading {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -413,7 +416,7 @@ a {
   font-family: "Roboto Black";
   font-size: 24px;
 }
-.copyright-text {
+.site-footer__copyright-text {
   font-family: "Roboto Regular";
   color: white;
 }
@@ -681,8 +684,8 @@ a {
   /* 5 секция */
   .strong-points-section__box-text_strong-section {
     -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    -ms-flex-order: -1;
+    order: -1;
     min-width: auto;
     text-align: start;
   }
@@ -704,5 +707,30 @@ a {
   .strong-points-section__section-strong-points {
     font-size: 1.8rem;
     margin-left: 0%;
+  }
+  /* навигация */
+  .mobile-navigation-hidden {
+    display: block;
+  }
+  .mobile-navigation__item {
+    font-size: 4rem;
+    font-family: "Bitter Regular";
+  }
+  .mobile-navigation__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+  /* подвал */
+
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+  .site-footer__product-heading {
+    order: -1;
+    text-align: end;
   }
 }
