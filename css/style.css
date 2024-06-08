@@ -292,56 +292,53 @@ a {
   height: 760px;
   grid-gap: 20px;
   margin-top: 150px !important;
-
   margin: 0 auto;
 }
 
-.recommendations-links-container {
+.testimonials-section__recommendations-links-container {
   list-style-type: none;
   font-family: "Roboto Bold";
   font-size: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
 }
-.recommendation-link {
+.testimonials-section__recommendation-link {
   margin-top: 30px;
   grid-row: -1;
 }
 
-.recommendations-links-container a {
+.testimonials-section__recommendations-links-container a {
   color: black !important; /* применил на всякий случай */
   font-family: "Roboto Regular";
   text-decoration: none;
 }
-.recommendations-links-container {
-  writing-mode: vertical-rl;
-  transform: rotate(-180deg);
-}
-#testimonials-heading {
+.testimonials-section__testimonials {
   font-family: "Roboto Bold";
   font-size: 24px !important;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   text-align: end;
 }
-.blockquote-2 {
+.testimonials-section__blockquote-2 {
   font-family: "Bitter Regular";
   font-size: 32px;
   max-width: 221px;
   margin: 40px 0;
   text-align: center;
 }
-.aside-section№4 {
+.testimonials-section__aside-section№4 {
   margin-left: 206px;
 }
-.img_testimonials {
+.testimonials-section__img-testimonials {
   width: 100%;
   height: 100%;
   max-width: 451px;
   object-fit: cover;
 }
-.img_testimonials1 {
+.testimonials-section__img-testimonials1 {
   width: 100%;
   max-width: 221px;
 }
@@ -586,5 +583,60 @@ a {
   }
   .box-art-director__items {
     font-weight: 500;
+  }
+
+  /* 4 секция */
+  .testimonials-section__img-hidden {
+    display: none;
+  }
+  .testimonials-section__recommendations-links-container {
+    list-style-type: none;
+    font-family: "Roboto Bold";
+    font-size: 1.6rem;
+    display: inline-block;
+    writing-mode: inherit;
+    transform: rotate(0deg);
+  }
+  .testimonials-section {
+    max-width: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: 760px;
+    grid-gap: 20px;
+    margin-top: 150px !important;
+    margin: 0 auto;
+  }
+  .testimonials-section__recommendations-links-container {
+    grid-row: 3/4;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .testimonials-section__aside-section№4 {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .testimonials-section__blockquote-2 {
+    font-family: "Bitter Lightr";
+    font-size: 3rem;
+    max-width: 34.2rem;
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+  }
+  .testimonials-section__testimonials {
+    font-family: "Roboto Bold";
+    font-size: 1.8rem;
+    writing-mode: inherit;
+    transform: rotate(0deg);
+    text-align: end;
+  }
+  .testimonials-section__package-img img {
+    max-width: 100%;
+  }
+  .testimonials-section__recommendation-link {
+    margin: 0;
   }
 }

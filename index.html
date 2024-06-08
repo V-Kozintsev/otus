@@ -218,19 +218,19 @@
       <!-- Секция Рекомендации -->
 
       <!-- ссылки и изображение -->
-      <ul class="recommendations-links-container">
+      <ul class="testimonials-section__recommendations-links-container">
         <!-- контейнер с ссылками -->
-        <li class="recommendation-link">
+        <li class="testimonials-section__recommendation-link">
           <strong class="text-recommendation">Creativity</strong><br />
           <a href="">www.whitepapers.com</a>
           <!-- ссылка 1 -->
         </li>
-        <li class="recommendation-link">
+        <li class="testimonials-section__recommendation-link">
           <strong class="text-recommendation">Creativity</strong><br />
           <a href="">www.whitepapers.com</a>
           <!-- ссылка 2 -->
         </li>
-        <li class="recommendation-link">
+        <li class="testimonials-section__recommendation-link">
           <strong class="text-recommendation">Website</strong><br />
           <a href="">www.whitepapers.com</a>
           <!-- ссылка 3 -->
@@ -238,23 +238,32 @@
       </ul>
       <!-- картинка кафе -->
       <img
-        class="img_testimonials"
+        class="testimonials-section__img-testimonials testimonials-section__img-hidden"
         src="img/cafe image.png"
         alt="Picture cafe image"
       />
-      <h2 id="testimonials-heading">Testimonials</h2>
+      <h2 id="testimonials-heading" class="testimonials-section__testimonials">
+        Testimonials
+      </h2>
       <!-- Заголовок рекомендации -->
-      <aside class="aside-section№4">
+      <aside class="testimonials-section__aside-section№4">
         <!-- какой то непонятный текст -->
-        <blockquote class="blockquote-2">
+        <blockquote class="testimonials-section__blockquote-2">
           I just really want to do good work and work with some great people,
           people who challenge me.
         </blockquote>
-        <img
-          class="img_testimonials1"
-          src="img/feet with a package.png"
-          alt=""
-        />
+        <picture class="testimonials-section__package-img">
+          <source
+            srcset="img/feet-with-a-packageMobile.png"
+            media="(max-width: 575px)"
+          />
+          <img
+            class="testimonials-section__img-testimonials1"
+            src="img/feet with a package.png"
+            alt=""
+          />
+        </picture>
+
         <!-- картинка ног с пакетом -->
       </aside>
     </section>
