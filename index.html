@@ -135,14 +135,23 @@
 
     <section class="designers-section">
       <!-- Секция дизайнеров -->
-      <h2 id="designers-heading">Designers</h2>
+      <h2 id="designers-heading" class="designers-section__designers-heading">
+        Designers
+      </h2>
       <!-- Заголовок Дизайнеры -->
-      <main class="designer-cards">
+      <main class="designers-section__designer-cards">
         <!-- карточки дизайнеров -->
-        <div class="designer-card">
+
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-1-mobile.png"
+            media="(max-width: 575px)"
+          />
           <img src="img/designers-1.png" alt="Picture designers-1" />
           <!-- Изображения дизайнера 1 -->
-          <p class="designer-info designer-info_n1">
+          <p
+            class="designers-section__designer-info designers-section__designer-info_n1"
+          >
             <!-- пояснительная бригада про дизайнера 1 -->
             <strong>Jess Wonder</strong><br />
             <strong>From/</strong>
@@ -150,11 +159,15 @@
             <strong>Skills/</strong>
             <span class="origin-skills">Design Strategy / Marketing</span>
           </p>
-        </div>
-        <div class="designer-card">
+        </picture>
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-2-mobile.png"
+            media="(max-width: 575px)"
+          />
           <img src="img/designers-2.png" alt="Picture designers-2" />
           <!-- Изображения дизайнера 2 -->
-          <p class="designer-info">
+          <p class="designers-section__designer-info">
             <!-- пояснительная бригада про дизайнера 2 -->
             <strong>Kameron Clein</strong><br />
             <strong>From/</strong
@@ -162,11 +175,15 @@
             <strong>Skills/</strong>
             <span class="origin-skills">Design Strategy / Marketing</span>
           </p>
-        </div>
-        <div class="designer-card">
+        </picture>
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-3-mobile.png"
+            media="(max-width: 575px)"
+          />
           <img src="img/designers-3.png" alt="Picture designers-3" />
           <!-- Изображения дизайнера 3 -->
-          <p class="designer-info">
+          <p class="designers-section__designer-info">
             <!-- пояснительная бригада про дизайнера 3 -->
             <strong>LOUISSE RED</strong><br />
             <strong>From/</strong
@@ -174,11 +191,15 @@
             <strong>Skills/</strong>
             <span class="origin-skills">Design Strategy / Marketing</span>
           </p>
-        </div>
-        <div class="designer-card">
+        </picture>
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-1-mobile.png"
+            media="(max-width: 575px)"
+          />
           <img src="img/designers-4.png" alt="Picture designers-4" />
           <!-- Изображения дизайнера 4 -->
-          <p class="designer-info">
+          <p class="designers-section__designer-info">
             <!-- пояснительная бригада про дизайнера 4 -->
             <strong>Kameron Clein</strong><br />
             <strong>From/</strong
@@ -186,11 +207,15 @@
             <strong>Skills/</strong>
             <span class="origin-skills">Design Strategy / Marketing</span>
           </p>
-        </div>
-        <div class="designer-card">
+        </picture>
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-2-mobile.png"
+            media="(max-width: 575px)"
+          />
           <img src="img/designers-4.png" alt="Picture designers-4" />
           <!-- Изображения дизайнера 4 -->
-          <p class="designer-info">
+          <p class="designers-section__designer-info">
             <!-- пояснительная бригада про дизайнера 4 -->
             <strong>Kameron Clein</strong><br />
             <strong>From/</strong
@@ -198,11 +223,15 @@
             <strong>Skills/</strong>
             <span class="origin-skills">Design Strategy / Marketing</span>
           </p>
-        </div>
-        <div class="designer-card">
+        </picture>
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-3-mobile.png"
+            media="(max-width: 575px)"
+          />
           <img src="img/designers-4.png" alt="Picture designers-4" />
           <!-- Изображения дизайнера 4 -->
-          <p class="designer-info">
+          <p class="designers-section__designer-info">
             <!-- пояснительная бригада про дизайнера 4 -->
             <strong>Kameron Clein</strong><br />
             <strong>From/</strong
@@ -210,7 +239,7 @@
             <strong>Skills/</strong>
             <span class="origin-skills">Design Strategy / Marketing</span>
           </p>
-        </div>
+        </picture>
       </main>
     </section>
 
@@ -263,21 +292,20 @@
             alt=""
           />
         </picture>
-
         <!-- картинка ног с пакетом -->
       </aside>
     </section>
 
     <section class="strong-points-section">
       <!-- Секция "Сильные стороны" -->
-      <h2 id="section-strong-points"><strong>Strong points</strong></h2>
+      <h2 id="section-strong-points" class="strong-points-section__section-strong-points"><strong>Strong points</strong></h2>
       <!-- Заголовок Сильных сторон -->
-      <div class="container_strong-points">
+      <div class="strong-points-section__container_strong-points">
         <img src="img/avery-klein.png" alt="" />
         <img src="img/dawid-liberadzki.jpg" alt="" />
-        <article class="box-text_strong-section">
+        <article class="strong-points-section__box-text_strong-section">
           <p class="bold-text"><strong>Strengths</strong></p>
-          <ul class="strong-points-list">
+          <ul class="strong-points-section__strong-points-list">
             <!-- перечесляем сильные стороны -->
             <li>Interiors</li>
             <li>Outdoors</li>
