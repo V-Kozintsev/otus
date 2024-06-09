@@ -1,0 +1,34 @@
+.mobile-navigation-hidden {
+  display: none;
+}
+
+.site-footer {
+  background-color: $dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 20px;
+}
+
+.site-footer__contact-info-block a {
+  @include fontRobotoRegular;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: underline;
+  line-height: 26px;
+}
+.site-footer__product-heading {
+  @include fontRobotoMedium;
+  font-size: 18px;
+  color: $white;
+}
+.HeadingMOD {
+  @include fontPlayfairDisplay;
+  font-size: 24px;
+}
+.site-footer__copyright-text {
+  @include fontRobotoRegular;
+  color: $white;
+  font-size: 1.6rem;
+}

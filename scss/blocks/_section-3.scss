@@ -1,6 +1,6 @@
 .designers-section {
   margin: 0 auto;
-  max-width: 144rem;
+  max-width: 100%;
   padding: 0 2rem;
 }
 
@@ -8,29 +8,25 @@
   margin-top: 3rem;
   display: flex;
   gap: 2rem;
-  
+  overflow: auto;
   align-items: end;
 }
 
 .designers-section__designers-heading {
-  font-family: $fonts-main;
-  font-weight: 700;
+  @include fontRobotoBold;
   font-style: normal;
-  font-size: 24px;
-  margin-left: 139px;
+  font-size: 2.4rem;
+  margin-left: 13.9rem;
 }
 .designers-section__designer-info {
-  font-family: $fonts-main;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 16px;
+  @include fontRobotoBold;
+  font-size: 1.6rem;
+  margin-top: 2.3rem;
 }
 .designers-section__designer-info_n1 {
   margin-left: 41%;
 }
 .origin-skills {
-  font-family: $fonts-main;
-  font-weight: 400;
+  @include fontRobotoRegular;
   font-style: normal;
 }
-

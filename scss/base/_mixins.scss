@@ -1,0 +1,44 @@
+@mixin fontRobotoBold {
+  font-family: $fonts-main;
+  font-weight: 700;
+  font-style: normal;
+}
+@mixin fontRobotoRegular {
+  font-family: $fonts-main;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin fontRobotoMedium {
+  font-family: $fonts-main;
+  font-weight: 500;
+  font-style: normal;
+}
+@mixin fontBitterLight {
+  font-family: $fonts-bitter;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+@mixin fontBitterRegular {
+  font-family: $fonts-bitter;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin fontPlayfairDisplay {
+  font-family: $fonts-headlines;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin fontPlayfairDisplayMedium {
+  font-family: $fonts-headlines;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+@mixin fontPlayfairDisplay {
+  font-family: $fonts-main;
+  font-weight: 900;
+  font-style: normal;
+}
