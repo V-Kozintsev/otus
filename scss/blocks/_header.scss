@@ -1,0 +1,32 @@
+.box-header {
+  min-height: 74.5rem;
+  background: url(..//img/header-img.jpg) left top/cover no-repeat;
+}
+.box-header__container {
+  height: 13.5rem;
+  background-color: $white;
+}
+.box-header__center-rectangle {
+  max-width: 69rem;
+  height: 36rem;
+  background-color: $white;
+  margin: 13.6rem auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-header__section-heading {
+  font-family: $fonts-headlines;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 8.6rem;
+}
+.box-header__studio-tagline {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+}

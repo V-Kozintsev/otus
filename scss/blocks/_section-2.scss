@@ -1,0 +1,60 @@
+.box-art-director {
+  max-height: 124rem;
+}
+.box-art-director__container {
+  display: flex;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 15.1rem 14.3rem;
+}
+.box-art-director-info__oppen,
+.art-director-name-hidden,
+.hidden {
+  display: none;
+}
+.box-art-director__wrapper-imgdir img {
+  max-width: 57.1rem;
+  height: 84rem;
+  width: 100%;
+  object-fit: cover;
+  margin-right: 2.8rem;
+}
+.box-art-director__textbiography {
+  font-family: $fonts-main;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.4rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-right: 7.7rem;
+}
+
+.box-art-director__art-director-name {
+  font-family: $fonts-headlines;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 8.6rem;
+  margin-bottom: 3.6rem;
+}
+.box-art-director__art-director-info {
+  font-family: $fonts-main;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.8rem;
+  margin-bottom: 3.6rem;
+}
+.stripe {
+  display: block;
+  background-color: $dark;
+  width: 2rem;
+  height: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+.box-art-director__art-director-quote {
+  font-family: $fonts-bitter;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.6rem;
+}

@@ -1,0 +1,34 @@
+.box-header__navigation {
+  max-width: 144rem;
+  margin: 0 auto;
+  height: 100%;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-header__menu-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  font-family: $fonts-main;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.4rem;
+
+  li {
+    margin-right: 5.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.box-header__site-logo {
+  font-family: $fonts-headlines;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 8.6rem;
+}
