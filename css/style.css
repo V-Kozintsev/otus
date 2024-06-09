@@ -260,9 +260,7 @@ a {
   overflow: auto;
   align-items: end;
 }
-/* .designers-section__designer-card img {
-  object-fit: cover;
-} */
+
 
 .designers-section__designers-heading {
   font-family: "Roboto Bold";
