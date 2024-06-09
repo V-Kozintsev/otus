@@ -347,7 +347,7 @@ a {
 /* ПЯТАЯ СЕКЦИЯ САЙТА */
 
 .strong-points-section {
-  margin: 150px 0 0;
+  margin: 150px 0;
   padding-left: 20px;
 }
 .strong-points-section__container_strong-points {
@@ -685,6 +685,10 @@ a {
   }
 
   /* 5 секция */
+  .strong-points-section {
+    margin: 150px 0 0;
+  }
+
   .strong-points-section__box-text_strong-section {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
