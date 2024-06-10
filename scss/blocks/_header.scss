@@ -1,6 +1,7 @@
 .box-header {
   min-height: 74.5rem;
   background: url(..//img/header-img.jpg) left top/cover no-repeat;
+  
 }
 .box-header__container {
   height: 13.5rem;
@@ -16,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 .box-header__section-heading {
   font-family: $fonts-headlines;
@@ -29,7 +31,4 @@
   font-weight: 500;
   font-style: normal;
   font-size: 2rem;
-}
-.mobile-navigationhidden {
-  display: none;
 }
