@@ -167,6 +167,10 @@ a:hover {
   font-size: 2rem;
 }
 
+.mobile-navigationhidden {
+  display: none;
+}
+
 .box-header__navigation {
   max-width: 144rem;
   margin: 0 auto;
