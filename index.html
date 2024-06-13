@@ -42,11 +42,42 @@
           </ul>
         </nav>
         <!-- Модальное окно -->
-        <div class="modal modal-hidden">
-          <div class="modal__content">
-            <p>модальное окно</p>
-          </div>
-        </div>
+        <form class="modal modal-hidden" action="#" autocomplete="on">
+          <p class="modal__contact-heading">Get in touch</p>
+          <p class="modal__contact-description">
+            Do you have any questions? Have something to say? Don't be shy,
+            write to us:
+          </p>
+          <label for="input-name">
+            <p class="modal__txt">Name</p>
+            <input
+              class="modal-input margin"
+              id="input-name"
+              type="text"
+              placeholder="3+ Characters"
+              maxlength="30"
+            />
+          </label>
+          <label for="input-email">
+            <p class="modal__txt">E-mail</p>
+            <input
+              class="modal-input margin"
+              id="input-email"
+              type="email"
+              placeholder="name@email.com"
+              maxlength="30"
+              name="emal"
+            />
+          </label>
+          <label for="input-email">
+            <textarea
+              class="modal-area margin"
+              name=""
+              id=""
+              placeholder="Some text..."
+            ></textarea>
+          </label>
+        </form>
         <div class="overlay overlay-hidden"></div>
       </div>
       <section class="box-header__center-rectangle">

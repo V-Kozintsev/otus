@@ -9,10 +9,12 @@ modalImg.addEventListener("click", function () {
   overlay.classList.toggle("overlay-hidden");
   modal.classList.toggle("modal-hidden");
   body.style.overflowY = "hidden";
+  modal.style.display = "flex";
 });
 
 overlay.addEventListener("click", function () {
   overlay.classList.toggle("overlay-hidden");
   modal.classList.toggle("modal-hidden");
+  modal.style.display = "none";
   body.style.overflowY = "auto";
 });
