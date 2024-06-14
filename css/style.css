@@ -64,6 +64,7 @@ html {
 a {
   text-decoration: none;
 }
+
 .box-header {
   height: 74.5rem;
   background: url(..//img/header-img.jpg) left top/cover no-repeat;
@@ -72,6 +73,34 @@ a {
 .box-header__container {
   height: 13.5rem;
   background-color: white;
+}
+
+.mobile-navigation__item {
+  font-size: 4rem;
+  font-family: "Bitter Regular";
+}
+
+.mobile-navigation__list a {
+  color: black;
+}
+.mobile-navigation__list a:active {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.mobile-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  list-style-type: none;
+
+  border: 0.2rem solid black;
+  padding: 1.7rem 0;
+}
+.mobile-navigation_hidden {
+  display: none;
 }
 
 .box-header__center-rectangle {
@@ -261,7 +290,6 @@ a {
   align-items: end;
 }
 
-
 .designers-section__designers-heading {
   font-family: "Roboto Bold";
   font-size: 24px;
@@ -377,13 +405,12 @@ a {
   text-align: center;
   min-width: 451px;
 }
-
+.mainmain {
+  height: 100%;
+}
 /* ////////////////// */
 
 /* ПОДВАЛ */
-.mobile-navigation-hidden {
-  display: none;
-}
 
 .site-footer {
   background-color: black;
@@ -714,12 +741,15 @@ a {
     margin-left: 0%;
   }
   /* навигация */
-  .mobile-navigation-hidden {
-    display: block;
-  }
+
   .mobile-navigation {
+    display: block;
+    position: sticky;
+    bottom: 0rem;
     margin: 8rem 0;
+    background-color: #fff;
   }
+
   .mobile-navigation__item {
     font-size: 4rem;
     font-family: "Bitter Regular";
