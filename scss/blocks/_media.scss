@@ -1,0 +1,282 @@
+@media screen and (max-width: 968px) {
+  .box-header__menu-links {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: end;
+  }
+  .box-header__menu-links li {
+    margin-right: 0rem;
+  }
+  .box-header__site-logo {
+    margin-right: 15rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .box-header__center-rectangle {
+    max-width: 47%;
+    background-color: $white;
+  }
+  .box-header__menu-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 2.2rem;
+  }
+  .box-header__section-heading {
+    line-height: 1.1;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+  }
+  .box-header__studio-tagline {
+    font-size: 1.8rem;
+  }
+
+  /*  2 секция */
+
+  .box-art-director__container {
+    flex-direction: column-reverse;
+    padding: 3rem 0px;
+    gap: 4rem;
+  }
+  .box-art-director {
+    flex-direction: column-reverse;
+    height: 50%;
+    text-align: center;
+  }
+  .box-art-director__textbiography,
+  .box-art-director__wrapper-imgdir {
+    margin-right: 0;
+  }
+  .box-art-director__wrapper-imgdir img {
+    max-height: 50vh;
+    margin-right: 0px;
+  }
+
+  .box-art-director__textbiography {
+    writing-mode: inherit;
+    transform: rotate(0deg);
+  }
+
+  .stripe {
+    margin: 20px auto;
+  }
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: normal !important;
+  }
+  .site-footer__product-heading {
+    order: -1;
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .box-header__container {
+    display: none;
+  }
+  .box-header {
+    background: url(..//img/mobile-img.png) center/cover;
+  }
+  .box-header__center-rectangle {
+    margin: 0 auto;
+  }
+  .box-header__section-heading {
+    line-height: 1.1;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+  }
+  .box-header__studio-tagline {
+    font-size: 1.8rem;
+  }
+
+  /* 2 секция */
+  .box-art-director__container {
+    flex-direction: column-reverse;
+    padding: 8rem 0px;
+  }
+  .box-art-director__art-director-quote {
+    @include fontBitterLight;
+    font-size: 3rem;
+    margin-bottom: 4.1rem;
+  }
+  .box-art-director__wrapper-imgdir img {
+    height: 100%;
+    object-fit: cover;
+    margin-right: 0px;
+  }
+  .box-art-director__hidden-info,
+  .box-art-director-info_hidden,
+  .art-director-name-oppen,
+  .box-art-director__textbiography-hidden,
+  .indent {
+    display: none;
+  }
+
+  .art-director-name-hidden {
+    font-size: 6.4rem;
+    margin-bottom: 3.5rem;
+  }
+  .indent {
+    margin-bottom: 4.1rem;
+  }
+  .art-director-name-hidden,
+  .box-art-director-info_oppen,
+  .box-art-director_textbiography-oppen,
+  .hidden {
+    display: flex;
+    margin-right: 0px;
+  }
+  .hidden,
+  .box-art-director-info_oppen {
+    padding: 0 1.6rem;
+  }
+  .box-art-director_textbiography-oppen {
+    writing-mode: inherit;
+    transform: rotate(0deg);
+  }
+  .stripe_hidden {
+    display: none;
+  }
+  .box-art-director-info_oppen {
+    justify-content: space-between;
+    margin-bottom: 5.7rem;
+  }
+  .box-art-director__items {
+    font-weight: 500;
+  }
+  /* 3 секция */
+  .designers-section__designers-heading {
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
+  .designers-section__designer-info_n1 {
+    margin-left: 0%;
+  }
+  /* 4 секция */
+  .testimonials-section__img-hidden {
+    display: none;
+  }
+  .testimonials-section__recommendations-links-container {
+    list-style-type: none;
+    @include fontRobotoBold;
+    font-size: 1.6rem;
+    display: inline-block;
+    writing-mode: inherit;
+    transform: rotate(0deg);
+  }
+  .testimonials-section {
+    max-width: 100%;
+    width: 90%;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: 760px;
+    grid-gap: 20px;
+    margin-top: 150px !important;
+    margin: 0 auto;
+  }
+
+  .testimonials-section__recommendations-links-container {
+    grid-row: 3/4;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .testimonials-section__aside-section№4 {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .testimonials-section__blockquote-2 {
+    @include fontBitterLight;
+    font-size: 3rem;
+    max-width: 34.2rem;
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+  }
+  .testimonials-section__testimonials {
+    @include fontRobotoBold;
+    font-size: 1.8rem;
+    writing-mode: inherit;
+    transform: rotate(0deg);
+    text-align: end;
+  }
+  .testimonials-section__package-img img {
+    max-width: 100%;
+  }
+  .testimonials-section__recommendation-link {
+    margin: 0;
+  }
+  /* 5 секция */
+  .strong-points-section {
+    margin: 150px 0 0;
+  }
+
+  .strong-points-section__box-text_strong-section {
+    order: -1;
+    min-width: auto;
+    text-align: start;
+  }
+  .bold-text {
+    font-size: 4.6rem;
+  }
+  .strong-points-section__strong-points-list {
+    font-size: 2.4rem;
+    margin-left: 1.7rem;
+  }
+  .strong-points-section__strong-points-list li {
+    margin-bottom: 0.8rem;
+  }
+
+  .strong-points-section__section-strong-points {
+    @include fontRobotoBold;
+    font-size: 1.8rem;
+  }
+  .strong-points-section__section-strong-points {
+    font-size: 1.8rem;
+    margin-left: 0%;
+  }
+  /* навигация */
+  .mobile-navigationhidden {
+    display: block;
+  }
+  .mobile-navigation {
+    display: block;
+    position: sticky;
+    bottom: 0;
+    margin: 8rem 0;
+    background-color: $white;
+  }
+  .mobile-navigation__item {
+    font-size: 4rem;
+    @include fontBitterRegular;
+  }
+
+  .mobile-navigation__list a {
+    color: $dark;
+  }
+  .mobile-navigation__list a:active {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+
+  .mobile-navigation__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border: 0.2rem solid $dark;
+    padding: 1.7rem 0;
+  }
+  /* подвал */
+
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: normal !important;
+  }
+  .site-footer__product-heading {
+    order: -1;
+    text-align: end;
+  }
+}
