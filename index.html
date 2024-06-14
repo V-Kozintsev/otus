@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mod Studio Website</title>
+  </head>
+  <body>
+    <!-- коробка для первой секции -->
+    <header class="box-header">
+      <div class="box-header__container">
+        <nav class="box-header__navigation">
+          <p class="box-header__site-logo">Mod</p>
+          <!-- Логотип - текст -->
+          <ul class="box-header__menu-links">
+            <!-- Раздел ссылок -->
+            <li><a class="menu-link" href="#bio-heading">Biography</a></li>
+            <!-- Ссылки -->
+            <li>
+              <a class="menu-link" href="#designers-heading">Designers</a>
+            </li>
+            <!-- Ссылки -->
+            <li>
+              <a class="menu-link" href="#testimonials">Testimonials</a>
+            </li>
+            <!-- Ссылки -->
+            <li>
+              <a class="menu-link" href="#section-strong-points"
+                >Strong points</a
+              >
+            </li>
+            <!-- Ссылки -->
+          </ul>
+        </nav>
+      </div>
+      <section class="box-header__center-rectangle">
+        <h1 class="box-header__section-heading">Mod Studio</h1>
+        <!-- Заголовок первого уровня(центр) -->
+        <p class="box-header__studio-tagline">Modern Web Studio</p>
+        <!-- название для веб-студии -->
+      </section>
+    </header>
+
+    <section class="box-art-director">
+      <!-- Секция описания арт директора -->
+      <div class="box-art-director__container">
+        <picture class="box-art-director__wrapper-imgdir">
+          <source
+            srcset="img/pictureartdirector-mobile.jpg"
+            media="(max-width: 575px)"
+          />
+          <img src="img/pictureartdirector.jpg" alt="Picture of Art Director" />
+        </picture>
+
+        <!-- изображение арт директор -->
+        <div>
+          <h2
+            class="box-art-director__textbiography box-art-director__textbiography-hidden"
+          >
+            Biography
+          </h2>
+        </div>
+        <!-- Заголовок биографии -->
+        <article id="bio-heading" class="box-art-director__content-ardirector">
+          <!-- Основная информация об арт директоре -->
+          <h3
+            class="box-art-director__art-director-name art-director-name-oppen"
+          >
+            Katya<br />Mills
+          </h3>
+          <!-- Имя арт директора -->
+          <p
+            class="box-art-director__art-director-info box-art-director-info__hidden"
+          >
+            <strong
+              >Art Director <br />Scenography / Styling / Creative Photography /
+              Design</strong
+            >
+          </p>
+          <div
+            class="box-art-director__art-director-info box-art-director-info__oppen"
+          >
+            <ul class="box-art-director__items">
+              <li>Art Director</li>
+              <li>- Scenography</li>
+              <li>- Styling</li>
+              <li>- Creative Photography</li>
+              <li>- Design</li>
+            </ul>
+            <h2
+              class="box-art-director__textbiography box-art-director__textbiography-oppen"
+            >
+              Biography
+            </h2>
+          </div>
+          <span class="stripe stripe_hidden"></span>
+          <!-- Описание направлений деятельности директора -->
+          <blockquote class="box-art-director__art-director-quote indent">
+            “The more I deal with the work<br />as something that is my own,<br />as
+            something that is personal,<br />the more successful it is.”
+          </blockquote>
+          <blockquote class="box-art-director__art-director-quote hidden">
+            “The more I deal with the work as something that is my own, as
+            something that is personal, the more successful it is.”
+          </blockquote>
+          <h3
+            class="box-art-director__art-director-name art-director-name-hidden"
+          >
+            -Katya Mills
+          </h3>
+          <!-- Мотивационное сообщение арт директора.Мотивация! -->
+        </article>
+      </div>
+    </section>
+
+    <section class="designers-section">
+      <!-- Секция дизайнеров -->
+      <h2 id="designers-heading" class="designers-section__designers-heading">
+        Designers
+      </h2>
+      <!-- Заголовок Дизайнеры -->
+      <main class="designers-section__designer-cards">
+        <!-- карточки дизайнеров -->
+
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-1-mobile.png"
+            media="(max-width: 575px)"
+          />
+          <img src="img/designers-1.png" alt="Picture designers-1" />
+          <!-- Изображения дизайнера 1 -->
+          <p
+            class="designers-section__designer-info designers-section__designer-info_n1"
+          >
+            <!-- пояснительная бригада про дизайнера 1 -->
+            <strong>Jess Wonder</strong><br />
+            <strong>From/</strong>
+            <span class="origin-skills">Be more flower</span><br />
+            <strong>Skills/</strong>
+            <span class="origin-skills">Design Strategy / Marketing</span>
+          </p>
+        </picture>
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-2-mobile.png"
+            media="(max-width: 575px)"
+          />
+          <img src="img/designers-2.png" alt="Picture designers-2" />
+          <!-- Изображения дизайнера 2 -->
+          <p class="designers-section__designer-info">
+            <!-- пояснительная бригада про дизайнера 2 -->
+            <strong>Kameron Clein</strong><br />
+            <strong>From/</strong
+            ><span class="origin-skills">Be more flower</span><br />
+            <strong>Skills/</strong>
+            <span class="origin-skills">Design Strategy / Marketing</span>
+          </p>
+        </picture>
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-3-mobile.png"
+            media="(max-width: 575px)"
+          />
+          <img src="img/designers-3.png" alt="Picture designers-3" />
+          <!-- Изображения дизайнера 3 -->
+          <p class="designers-section__designer-info">
+            <!-- пояснительная бригада про дизайнера 3 -->
+            <strong>LOUISSE RED</strong><br />
+            <strong>From/</strong
+            ><span class="origin-skills">Be more flower</span><br />
+            <strong>Skills/</strong>
+            <span class="origin-skills">Design Strategy / Marketing</span>
+          </p>
+        </picture>
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-1-mobile.png"
+            media="(max-width: 575px)"
+          />
+          <img src="img/designers-4.png" alt="Picture designers-4" />
+          <!-- Изображения дизайнера 4 -->
+          <p class="designers-section__designer-info">
+            <!-- пояснительная бригада про дизайнера 4 -->
+            <strong>Kameron Clein</strong><br />
+            <strong>From/</strong
+            ><span class="origin-skills">Be more flower</span><br />
+            <strong>Skills/</strong>
+            <span class="origin-skills">Design Strategy / Marketing</span>
+          </p>
+        </picture>
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-2-mobile.png"
+            media="(max-width: 575px)"
+          />
+          <img src="img/designers-4.png" alt="Picture designers-4" />
+          <!-- Изображения дизайнера 4 -->
+          <p class="designers-section__designer-info">
+            <!-- пояснительная бригада про дизайнера 4 -->
+            <strong>Kameron Clein</strong><br />
+            <strong>From/</strong
+            ><span class="origin-skills">Be more flower</span><br />
+            <strong>Skills/</strong>
+            <span class="origin-skills">Design Strategy / Marketing</span>
+          </p>
+        </picture>
+        <picture class="designers-section__designer-card">
+          <source
+            srcset="img/designers-3-mobile.png"
+            media="(max-width: 575px)"
+          />
+          <img src="img/designers-4.png" alt="Picture designers-4" />
+          <!-- Изображения дизайнера 4 -->
+          <p class="designers-section__designer-info">
+            <!-- пояснительная бригада про дизайнера 4 -->
+            <strong>Kameron Clein</strong><br />
+            <strong>From/</strong
+            ><span class="origin-skills">Be more flower</span><br />
+            <strong>Skills/</strong>
+            <span class="origin-skills">Design Strategy / Marketing</span>
+          </p>
+        </picture>
+      </main>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+      <!-- Секция Рекомендации -->
+
+      <!-- ссылки и изображение -->
+      <ul class="testimonials-section__recommendations-links-container">
+        <!-- контейнер с ссылками -->
+        <li class="testimonials-section__recommendation-link">
+          <strong class="text-recommendation">Creativity</strong><br />
+          <a href="">www.whitepapers.com</a>
+          <!-- ссылка 1 -->
+        </li>
+        <li class="testimonials-section__recommendation-link">
+          <strong class="text-recommendation">Creativity</strong><br />
+          <a href="">www.whitepapers.com</a>
+          <!-- ссылка 2 -->
+        </li>
+        <li class="testimonials-section__recommendation-link">
+          <strong class="text-recommendation">Website</strong><br />
+          <a href="">www.whitepapers.com</a>
+          <!-- ссылка 3 -->
+        </li>
+      </ul>
+      <!-- картинка кафе -->
+      <img
+        class="testimonials-section__img-testimonials testimonials-section__img-hidden"
+        src="img/cafe image.png"
+        alt="Picture cafe image"
+      />
+      <h2 id="testimonials-heading" class="testimonials-section__testimonials">
+        Testimonials
+      </h2>
+      <!-- Заголовок рекомендации -->
+      <aside class="testimonials-section__aside-section№4">
+        <!-- какой то непонятный текст -->
+        <blockquote class="testimonials-section__blockquote-2">
+          I just really want to do good work and work with some great people,
+          people who challenge me.
+        </blockquote>
+        <picture class="testimonials-section__package-img">
+          <source
+            srcset="img/feet-with-a-packageMobile.png"
+            media="(max-width: 575px)"
+          />
+          <img
+            class="testimonials-section__img-testimonials1"
+            src="img/feet with a package.png"
+            alt=""
+          />
+        </picture>
+        <!-- картинка ног с пакетом -->
+      </aside>
+    </section>
+
+    <section class="strong-points-section">
+      <!-- Секция "Сильные стороны" -->
+      <h2
+        id="section-strong-points"
+        class="strong-points-section__section-strong-points"
+      >
+        <strong>Strong points</strong>
+      </h2>
+      <!-- Заголовок Сильных сторон -->
+      <picture class="strong-points-section__container_strong-points">
+        <img src="img/dawid-liberadzki.jpg" alt="" />
+        <img src="img/avery-klein.png" alt="" />
+        <article class="strong-points-section__box-text_strong-section">
+          <p class="bold-text"><strong>Strengths</strong></p>
+          <ul class="strong-points-section__strong-points-list">
+            <!-- перечесляем сильные стороны -->
+            <li>Interiors</li>
+            <li>Outdoors</li>
+            <li>Portraits</li>
+            <li>Styling</li>
+            <li>Events</li>
+            <li>Architecture</li>
+            <li>Design</li>
+            <li>Celebrations</li>
+            <li>Fashion</li>
+            <li>Nature</li>
+          </ul>
+        </article>
+        <img src="img/keghan-crossland.png" alt="" />
+      </picture>
+    </section>
+    <nav class="mobile-navigation mobile-navigation_hidden">
+      <ul class="mobile-navigation__list">
+        <li>
+          <a class="mobile-navigation__item" href="#bio-heading">B</a>
+        </li>
+        <li>
+          <a class="mobile-navigation__item" href="#designers-heading">D</a>
+        </li>
+        <li>
+          <a class="mobile-navigation__item" href="#testimonials">T</a>
+        </li>
+        <li>
+          <a class="mobile-navigation__item" href="#section-strong-points">S</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="site-footer">
+      <!-- подвал сайта -->
+      <div class="site-footer__contact-info-block">
+        <!-- блок ссылки на сайт и телефон -->
+        <address><a href="tel:номер_телефона">+7 921 123-45-67</a></address>
+        <a href="">info@modstudio.com</a>
+      </div>
+      <h3 class="site-footer__product-heading">
+        A product of <span class="HeadingMOD">MOD</span>
+      </h3>
+      <!-- Заголовок продукта -->
+      <p class="site-footer__copyright-text">
+        © 2023 Mod Media. All rights reserved
+      </p>
+      <!-- Копирайт 2023 Mod Media. Все права защищены -->
+    </footer>
+  </body>
+</html>
