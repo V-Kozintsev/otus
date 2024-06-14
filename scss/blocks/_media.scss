@@ -105,7 +105,7 @@
     margin-right: 0px;
   }
   .box-art-director__hidden-info,
-  .box-art-director-info__hidden,
+  .box-art-director-info_hidden,
   .art-director-name-oppen,
   .box-art-director__textbiography-hidden,
   .indent {
@@ -120,25 +120,24 @@
     margin-bottom: 4.1rem;
   }
   .art-director-name-hidden,
-  .box-art-director-info__oppen,
-  .box-art-director__textbiography-oppen,
+  .box-art-director-info_oppen,
+  .box-art-director_textbiography-oppen,
   .hidden {
     display: flex;
     margin-right: 0px;
   }
   .hidden,
-  .box-art-director-info__oppen {
+  .box-art-director-info_oppen {
     padding: 0 1.6rem;
   }
-  .box-art-director__textbiography-oppen {
+  .box-art-director_textbiography-oppen {
     writing-mode: inherit;
-
     transform: rotate(0deg);
   }
   .stripe_hidden {
     display: none;
   }
-  .box-art-director-info__oppen {
+  .box-art-director-info_oppen {
     justify-content: space-between;
     margin-bottom: 5.7rem;
   }
@@ -243,11 +242,15 @@
     display: block;
   }
   .mobile-navigation {
+    display: block;
+    position: sticky;
+    bottom: 0;
     margin: 8rem 0;
+    background-color: $white;
   }
   .mobile-navigation__item {
     font-size: 4rem;
-    @include fontBitterLight;
+    @include fontBitterRegular;
   }
 
   .mobile-navigation__list a {

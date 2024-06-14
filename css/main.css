@@ -167,7 +167,7 @@ a:hover {
   font-size: 2rem;
 }
 
-.mobile-navigationhidden {
+.mobile-navigation_hidden {
   display: none;
 }
 
@@ -231,7 +231,7 @@ a:hover {
   padding: 15.1rem 14.3rem;
 }
 
-.box-art-director-info__oppen,
+.box-art-director-info_oppen,
 .art-director-name-hidden,
 .hidden {
   display: none;
@@ -595,7 +595,7 @@ a:hover {
     margin-right: 0px;
   }
   .box-art-director__hidden-info,
-  .box-art-director-info__hidden,
+  .box-art-director-info_hidden,
   .art-director-name-oppen,
   .box-art-director__textbiography-hidden,
   .indent {
@@ -609,8 +609,8 @@ a:hover {
     margin-bottom: 4.1rem;
   }
   .art-director-name-hidden,
-  .box-art-director-info__oppen,
-  .box-art-director__textbiography-oppen,
+  .box-art-director-info_oppen,
+  .box-art-director_textbiography-oppen,
   .hidden {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -618,10 +618,10 @@ a:hover {
     margin-right: 0px;
   }
   .hidden,
-  .box-art-director-info__oppen {
+  .box-art-director-info_oppen {
     padding: 0 1.6rem;
   }
-  .box-art-director__textbiography-oppen {
+  .box-art-director_textbiography-oppen {
     -webkit-writing-mode: inherit;
         -ms-writing-mode: inherit;
             writing-mode: inherit;
@@ -631,7 +631,7 @@ a:hover {
   .stripe_hidden {
     display: none;
   }
-  .box-art-director-info__oppen {
+  .box-art-director-info_oppen {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -757,13 +757,17 @@ a:hover {
     display: block;
   }
   .mobile-navigation {
+    display: block;
+    position: sticky;
+    bottom: 0;
     margin: 8rem 0;
+    background-color: #ffffff;
   }
   .mobile-navigation__item {
     font-size: 4rem;
     font-family: "Bitter", serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
   }
   .mobile-navigation__list a {

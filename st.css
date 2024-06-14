@@ -1,0 +1,16 @@
+.box {
+  height: 2000px;
+  background-color: grey;
+}
+
+.styky {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: sticky;
+  bottom: 0px;
+}
+.box2 {
+  height: 100;
+  background-color: rgb(7, 131, 139);
+}
