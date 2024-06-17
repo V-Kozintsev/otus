@@ -861,29 +861,11 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  /* flex-wrap: wrap; */
-}
-
-.btn-form::before {
-  content: "+";
-  font-family: "Font Awesome";
-  font-size: 4rem; /* Увеличиваем размер плюса до 4rem */
-  font-weight: bold;
-  vertical-align: middle; /* Центрируем плюс вертикально */
-  margin-right: 6px;
-  color: rgb(255, 255, 255);
-  display: none;
-}
-
-.btn-form:hover::before {
-  display: block;
+  flex-wrap: wrap;
 }
 
 .btn-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #0d0d0d;
+  border: 1px solid rgb(165, 13, 13);
   width: 18rem;
   height: 5.5rem;
   border-radius: 8px;
@@ -891,10 +873,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  text-align: center;
 }
 
-.btn-form:hover {
+.btn-form:hover:before {
   background-color: #0d0d0d;
   color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

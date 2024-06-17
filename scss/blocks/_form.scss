@@ -36,23 +36,35 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
+.btn-form::before {
+  content: "\2b";
+  font-family: "Font Awesome";
+  font-size: 4rem; /* Увеличиваем размер плюса до 4rem */
+  font-weight: bold;
+  vertical-align: middle; /* Центрируем плюс вертикально */
+  margin-right: 6px;
+  color: rgb(255, 255, 255);
+  display: none;
+}
+.btn-form:hover::before {
+  display: block;
+}
+
 .btn-form {
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $dark;
   width: 18rem;
   height: 5.5rem;
   border-radius: 8px;
   font-size: 1.8rem;
   @include fontRobotoMedium;
+  text-align: center;
 }
 .btn-form:hover {
   background-color: $dark;
   color: $white;
-}
-.box-btn:before {
-  content: "";
-  background: url(../img/poppup/Left-Icon.svg);
-  background-size: contain; /* Размер изображения будет подстраиваться под размер блока */
-  /* Дополнительные стили для позиционирования иконки */
 }
