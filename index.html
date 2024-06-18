@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+      integrity="YOUR-INTEGRITY-CODE"
+      crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,7 +55,7 @@
             Do you have any questions? Have something to say? Don't be shy,
             write to us:
           </p>
-          <label for="input-name">
+          <label for="input-name" class="modal__label--user">
             <p class="modal__txt">Name</p>
             <input
               class="modal-input margin"
@@ -63,7 +65,7 @@
               maxlength="30"
             />
           </label>
-          <label for="input-email">
+          <label for="input-email" class="modal__label--email">
             <p class="modal__txt">E-mail</p>
             <input
               class="modal-input margin"
@@ -74,7 +76,7 @@
               name="email"
             />
           </label>
-          <label for="input-area">
+          <label for="input-area" class="modal__label--area">
             <p class="modal__txt">Comment</p>
             <textarea
               class="modal-area margin"
