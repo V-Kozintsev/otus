@@ -13,12 +13,12 @@
   transform: translate(-50%, -50%);
   max-width: 48rem;
   background-color: $white;
-  z-index: 10;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 2rem;
   flex-direction: column;
   gap: 2.4rem;
+  z-index: 3;
 
   &__contact-heading {
     @include fontRobotoBold;
@@ -33,6 +33,7 @@
     font-size: 1.8rem;
   }
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -41,7 +42,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
-  z-index: 5;
 }
 .modal-img:hover {
   cursor: pointer;
