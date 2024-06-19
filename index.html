@@ -55,36 +55,40 @@
             Do you have any questions? Have something to say? Don't be shy,
             write to us:
           </p>
-          <label for="input-name" class="modal__label--user">
-            <p class="modal__txt">Name</p>
+          <div class="modal__label--user">
+            <label class="modal__txt" for="input-name">Name</label>
             <input
-              class="modal-input margin"
               id="input-name"
               type="text"
               placeholder="3+ Characters"
               maxlength="30"
             />
-          </label>
-          <label for="input-email" class="modal__label--email">
-            <p class="modal__txt">E-mail</p>
+            <svg
+              id="useredit"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              width="30"
+              height="30"
+            >
+              <path
+                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H322.8c-3.1-8.8-3.7-18.4-1.4-27.8l15-60.1c2.8-11.3 8.6-21.5 16.8-29.7l40.3-40.3c-32.1-31-75.7-50.1-123.9-50.1H178.3zm435.5-68.3c-15.6-15.6-40.9-15.6-56.6 0l-29.4 29.4 71 71 29.4-29.4c15.6-15.6 15.6-40.9 0-56.6l-14.4-14.4zM375.9 417c-4.1 4.1-7 9.2-8.4 14.9l-15 60.1c-1.4 5.5 .2 11.2 4.2 15.2s9.7 5.6 15.2 4.2l60.1-15c5.6-1.4 10.8-4.3 14.9-8.4L576.1 358.7l-71-71L375.9 417z"
+              />
+            </svg>
+          </div>
+          <!-- <div class="modal__label--email">
+            <label lass="modal__txt" for="input-email">E-mail</label>
             <input
-              class="modal-input margin"
               id="input-email"
               type="email"
               placeholder="name@email.com"
               maxlength="30"
               name="email"
             />
-          </label>
-          <label for="input-area" class="modal__label--area">
-            <p class="modal__txt">Comment</p>
-            <textarea
-              class="modal-area margin"
-              name=""
-              id="input-area"
-              placeholder="Some text..."
-            ></textarea>
-          </label>
+          </div>
+          <div class="modal__label--area">
+            <label class="modal__txt" for="input-area">Comment</label>  
+            <textarea name="" id="">Some text...</textarea>
+          </div> -->
           <div class="box-btn">
             <button class="btn-form" type="button">Cansel</button>
             <button class="btn-form" type="submit">Send</button>

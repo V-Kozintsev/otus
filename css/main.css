@@ -936,125 +936,67 @@ body {
   font-size: 1.6rem;
 }
 
-.margin {
-  margin-top: 0.6rem;
+.modal__txt {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
 }
 
-#input-name:focus,
-.modal-input:focus,
-.modal-area:focus {
-  outline: 0.1rem solid #0d0d0d;
-  -webkit-box-shadow: inset 0 0 5px rgba(39, 39, 39, 0.5);
-          box-shadow: inset 0 0 5px rgba(39, 39, 39, 0.5);
+[type=text] {
+  border: 0.1rem solid grey;
+  width: 100%;
+  border-radius: 0.8rem;
+  height: 4.5rem;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-input[type=email]:invalid {
-  outline: 0.1rem solid red;
-  -webkit-box-shadow: inset 0 0 5px rgba(233, 2, 2, 0.966);
-          box-shadow: inset 0 0 5px rgba(233, 2, 2, 0.966);
+[type=text]:focus::-webkit-input-placeholder {
+  color: green;
+  opacity: 0.5;
+}
+
+[type=text]:focus::-moz-placeholder {
+  color: green;
+  opacity: 0.5;
+}
+
+[type=text]:focus:-ms-input-placeholder {
+  color: green;
+  opacity: 0.5;
+}
+
+[type=text]:focus::-ms-input-placeholder {
+  color: green;
+  opacity: 0.5;
+}
+
+[type=text]:focus::placeholder {
+  color: green;
+  opacity: 0.5;
+}
+
+[type=text]:focus {
+  outline: 0.2rem solid green;
+}
+
+[type=text]:focus + #useredit {
+  fill: green;
+  opacity: 0.5;
 }
 
 .modal__label--user {
   position: relative;
 }
 
-.modal__label--user::after {
-  content: url(../img/poppup/user-pen-solid.svg);
-  width: 24px;
-  height: 24px;
+#useredit {
   position: absolute;
-  top: 55%;
-  right: 1rem;
-  cursor: none;
-}
-
-.modal__label--email {
-  position: relative;
-}
-
-.modal__label--email::after {
-  content: url(../img/poppup/at-solid.svg);
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 55%;
-  right: 1rem;
-  cursor: none;
-}
-
-.modal__label--area {
-  position: relative;
-}
-
-.modal__label--area::after {
-  content: url(../img/poppup/comments-regular.svg);
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 22%;
-  right: 1rem;
-  cursor: none;
-}
-
-.modal-area {
-  border: 0.1rem solid grey;
-  border-radius: 0.8rem;
-  max-width: 440px;
-  width: 100%;
-  min-height: 13.5rem;
-  padding: 1rem 0.6rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.6rem;
-  overflow-y: auto;
-}
-
-.box-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 2rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.btn-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #0d0d0d;
-  width: 18rem;
-  height: 5.5rem;
-  border-radius: 8px;
-  font-size: 1.8rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-align: center;
-}
-
-.btn-form:hover::before {
-  content: "+";
-  font-family: "Font Awesome";
-  font-size: 4rem;
-  font-weight: bold;
-  margin-right: 0.8rem;
-  color: #ffffff;
-}
-
-.btn-form:hover {
-  background-color: #0d0d0d;
-  color: #ffffff;
+  left: 90%;
+  top: 50%;
 }
