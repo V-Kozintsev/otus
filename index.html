@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
-      integrity="YOUR-INTEGRITY-CODE"
-      crossorigin="anonymous"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="css/main.css" />
@@ -44,6 +38,7 @@
               src="img/poppup/popup.png"
               alt="Small Image"
             />
+
             <!-- Ссылки -->
           </ul>
         </nav>
@@ -55,13 +50,14 @@
             Do you have any questions? Have something to say? Don't be shy,
             write to us:
           </p>
-          <label class="modal__txt" for="input-name">Name</label>
+          <label class="modal__txt" for="user-edit">Name</label>
           <div class="modal__container">
             <input
-              id="input-name"
+              id="user-edit"
               type="text"
               placeholder="3+ Characters"
               maxlength="30"
+              required
             />
             <svg
               id="useredit"
@@ -83,6 +79,7 @@
               placeholder="name@email.com"
               maxlength="30"
               name="email"
+              required
             />
             <svg
               id="emailedit"
@@ -102,6 +99,7 @@
               name="area"
               id="input-area"
               placeholder="Some text..."
+              required
             ></textarea>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +113,6 @@
               />
             </svg>
           </div>
-
           <div class="box-btn">
             <button class="btn-form" type="button">Cansel</button>
             <button class="btn-form" type="submit">Send</button>
@@ -426,6 +423,10 @@
       </p>
       <!-- Копирайт 2023 Mod Media. Все права защищены -->
     </footer>
+    <script
+      src="https://kit.fontawesome.com/e02c1a52b5.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
   </body>
 </html>
