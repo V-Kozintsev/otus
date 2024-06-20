@@ -1,49 +1,40 @@
-.modal-input {
+.modal__container {
+  display: flex;
   border: 0.1rem solid grey;
-  border-radius: 0.8rem;
   width: 100%;
-  padding: 1rem 0.6rem;
-  @include fontRobotoRegular;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.8rem;
   font-size: 1.6rem;
-}
-.modal__txt {
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.8rem;
-  margin-bottom: 0.6rem;
+  @include fontRobotoRegular;
+  margin-bottom: 2.4rem;
 }
 
-[type="text"] {
-  border: 0.1rem solid grey;
+[type="text"],
+[type="email"] {
   width: 100%;
-  border-radius: 0.8rem;
-  height: 4.5rem;
-  font-size: 1.6rem;
-  padding-left: 1rem;
-  @include fontRobotoRegular;
 }
-[type="text"]:focus::placeholder {
+
+[type="text"]:focus::placeholder,
+[type="email"]:focus::placeholder,
+textarea:focus::placeholder {
   color: green;
   opacity: 0.5;
 }
 
-[type="text"]:focus {
-  outline: 0.2rem solid green;
+.modal__container:focus-within {
+  outline: 0.1rem solid green;
 }
-
-[type="text"]:focus + #useredit {
+.modal__container:focus-within svg {
   fill: green;
-  opacity: 0.5;
 }
 
-.modal__label--user {
-  position: relative;
+textarea {
+  width: 100%;
+  height: 13.5rem;
+  resize: none;
+  font-family: inherit;
 }
-
-#useredit {
-  position: absolute;
-  left: 90%;
-  top: 50%;
+textarea:focus {
+  outline: none;
 }

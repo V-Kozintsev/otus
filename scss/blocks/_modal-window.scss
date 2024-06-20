@@ -17,21 +17,22 @@
   border-radius: 1rem;
   padding: 2rem;
   flex-direction: column;
-  gap: 2.4rem;
   z-index: 3;
-
 
   &__contact-heading {
     @include fontRobotoBold;
     font-size: 2.4rem;
+    margin-bottom: 2.4rem;
   }
   &__contact-description {
     @include fontRobotoRegular;
     font-size: 1.8rem;
+    margin-bottom: 2.4rem;
   }
   &__txt {
     @include fontRobotoMedium;
     font-size: 1.8rem;
+    margin-bottom: 0.6rem;
   }
 }
 
