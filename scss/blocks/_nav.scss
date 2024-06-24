@@ -32,3 +32,23 @@
   font-style: normal;
   font-size: 8.6rem;
 }
+a {
+  color: $dark;
+  display: inline-block;
+  line-height: 1;
+  &::after {
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: $dark;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+  &:hover {
+    display: block;
+    transform: scale(1);
+  }
+}
