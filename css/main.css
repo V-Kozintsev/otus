@@ -939,10 +939,6 @@ a:hover {
   cursor: pointer;
 }
 
-.modal-img:hover {
-  cursor: pointer;
-}
-
 .modal__container {
   position: relative;
   font-size: 1.6rem;
