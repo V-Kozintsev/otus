@@ -122,6 +122,7 @@ html {
 .box-header__container {
   height: 13.5rem;
   background-color: #ffffff;
+  width: 100%;
 }
 
 .box-header__center-rectangle {
@@ -885,11 +886,8 @@ a:hover {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 0 auto;
+  position: relative;
   max-width: 48rem;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);

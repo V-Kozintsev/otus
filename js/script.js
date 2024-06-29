@@ -23,4 +23,5 @@ overlay.addEventListener("click", function () {
 btnForm.addEventListener("click", () => {
   overlay.classList.toggle("overlay-hidden");
   modal.style.display = "none";
+  body.style.overflowY = "auto";
 });
