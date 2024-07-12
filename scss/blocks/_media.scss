@@ -17,9 +17,13 @@
     background-color: $white;
   }
   .box-header__menu-links {
-    flex-direction: column;
+    justify-content: space-between;
+
     gap: 0.5rem;
-    font-size: 2.2rem;
+  }
+  .menu-link {
+    margin-right: 1rem;
+    font-size: 2rem;
   }
   .box-header__section-heading {
     line-height: 1.1;
@@ -67,6 +71,12 @@
   .site-footer__product-heading {
     order: -1;
     text-align: end;
+  }
+  .site-footer__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: normal !important;
   }
 }
 
@@ -270,7 +280,7 @@
   }
   /* подвал */
 
-  .site-footer {
+  .site-footer__container {
     display: flex;
     flex-direction: column;
     align-items: normal !important;

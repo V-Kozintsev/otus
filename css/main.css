@@ -127,7 +127,7 @@ html {
 
 .box-header__center-rectangle {
   max-width: 69rem;
-  height: 36rem;
+  min-height: 36rem;
   background-color: #ffffff;
   margin: 13.6rem auto;
   display: -webkit-box;
@@ -313,6 +313,7 @@ a:hover {
 .designers-section {
   margin: 0 auto;
   max-width: 100%;
+  max-width: 144rem;
   padding: 0 2rem;
 }
 
@@ -435,8 +436,9 @@ a:hover {
 }
 
 .strong-points-section {
-  margin: 150px 0;
   padding-left: 20px;
+  max-width: 144rem;
+  margin: 15rem auto;
 }
 
 .strong-points-section__container_strong-points {
@@ -503,12 +505,14 @@ a:hover {
     background-color: #ffffff;
   }
   .box-header__menu-links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 0.5rem;
-    font-size: 2.2rem;
+  }
+  .menu-link {
+    margin-right: 1rem;
+    font-size: 2rem;
   }
   .box-header__section-heading {
     line-height: 1.1;
@@ -570,6 +574,19 @@ a:hover {
         -ms-flex-order: -1;
             order: -1;
     text-align: end;
+  }
+  .site-footer__container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: normal !important;
+        -ms-flex-align: normal !important;
+            align-items: normal !important;
   }
 }
 @media screen and (max-width: 575px) {
@@ -805,7 +822,7 @@ a:hover {
     padding: 1.7rem 0;
   }
   /* подвал */
-  .site-footer {
+  .site-footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -830,6 +847,9 @@ a:hover {
 
 .site-footer {
   background-color: #0d0d0d;
+}
+
+.site-footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,6 +859,8 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 144rem;
+  margin: 0 auto;
   padding: 70px 20px;
 }
 
