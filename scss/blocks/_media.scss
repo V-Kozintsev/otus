@@ -130,14 +130,14 @@
     margin-bottom: 4.1rem;
   }
   .art-director-name-hidden,
-  .box-art-director-info__oppen,
+  .box-art-director__art-director-info_oppen,
   .box-art-director__textbiography-oppen,
   .hidden {
     display: flex;
     margin-right: 0px;
   }
   .hidden,
-  .box-art-director-info__oppen {
+  .box-art-director__art-director-info_oppen {
     padding: 0 1.6rem;
   }
   .box-art-director__textbiography-oppen {
@@ -145,10 +145,11 @@
 
     transform: rotate(0deg);
   }
-  .stripe_hidden {
+  .stripe_hidden,
+  .box-art-director__art-director-info_hidden {
     display: none;
   }
-  .box-art-director-info__oppen {
+  .box-art-director__art-director-info_oppen {
     justify-content: space-between;
     margin-bottom: 5.7rem;
   }
